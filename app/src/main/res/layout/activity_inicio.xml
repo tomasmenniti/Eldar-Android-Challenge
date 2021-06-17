@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".INICIO.inicio">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/app_name">
+
+        <TextView
+            android:id="@+id/txt_bienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bienvenido"
+            android:textColor="#252525"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/txt_bienvenido_lore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/bienvenido_lore"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintLeft_toLeftOf="@+id/txt_bienvenido"
+            app:layout_constraintTop_toBottomOf="@+id/txt_bienvenido"
+            android:contentDescription="@string/app_name"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_clima"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_bienvenido_lore"
+            android:contentDescription="@string/app_name">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name">
+
+                <ImageView
+                    android:id="@+id/img_clima"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <View
+                    android:id="@+id/view_background_clima"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.4"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/txt_clima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#252525"
+                    android:alpha="0.6"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="@string/clima"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_notas"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_clima"
+            android:contentDescription="@string/app_name">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name">
+
+                <ImageView
+                    android:id="@+id/img_notas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <View
+                    android:id="@+id/view_background_notas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.4"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/txt_notas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#252525"
+                    android:alpha="0.6"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="@string/mis_notas"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/bt_cerrar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/cerrar_sesion"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/open_sans"
+            android:textAllCaps="false"
+            android:background="@drawable/background_bt_inicio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_notas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/app_name"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

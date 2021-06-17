@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--STRINGS GENERALES-->
+    <string name="ip">https://doggyapp.000webhostapp.com</string>
+    <string name="ok">Ok</string>
+    <string name="error">An error has ocurred</string>
+    <string name="campos_vacios">You must complete all the fields</string>
+    <string name="error_servidor">Error connecting to server</string>
+    <string name="datos_incorrectos">The data entered is incorrect</string>
+    <string name="cargando">Loading...</string>
+
+    <!--INICIO DE SESION-->
+    <string name="app_name">Eldar Android Challenge</string>
+    <string name="inicio_de_sesion">Login</string>
+    <string name="nombre_de_usuario">Username</string>
+    <string name="contrasena">Password</string>
+    <string name="iniciar_sesion">Log in</string>
+    <string name="programador">Programmed by Tomás Menniti</string>
+
+    <!--INICIO-->
+    <string name="bienvenido">¡Welcome!</string>
+    <string name="bienvenido_lore">Notes and weather management system.</string>
+    <string name="clima">Weather</string>
+    <string name="mis_notas">My notes</string>
+    <string name="cerrar_sesion">Sign off</string>
+    <string name="estas_seguro">Are you sure?</string>
+    <string name="deseas_salir">Do you want to log out?</string>
+
+    <!--NOTAS-->
+    <string name="agregar_nota">Add note</string>
+    <string name="volver_atras">Go back</string>
+    <string name="titulo_nota">Note title</string>
+    <string name="descripcion_nota">Note description</string>
+    <string name="guardar">Keep</string>
+    <string name="editar">Make Modification</string>
+    <string name="eliminar">Delete</string>
+    <string name="nota_agregada">Note added</string>
+    <string name="nota_modificada">Note modified</string>
+    <string name="nota_eliminada">Note deleted</string>
+
+    <!--CLIMA-->
+    <string name="temperatura">Temperature</string>
+    <string name="temperatura_minima">Minimum temperature</string>
+    <string name="temperatura_maxima">Maximum temperature</string>
+
+    <!--SQLITE-->
+    <string name="no_hay_notas">There are no notes to show</string>
+    <string name="error_obtener_notas">Failed to get notes</string>
+    <string name="error_agregar_nota">Error adding note</string>
+
+</resources>
